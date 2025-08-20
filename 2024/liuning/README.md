@@ -1,4 +1,8 @@
 # 基于虚幻引擎5的2.5D游戏demo
+
+通过网盘分享的文件：Windows (5).zip
+链接: https://pan.baidu.com/s/1HxyT2b8vt1RkzgXLyMwhXw?pwd=5itz 提取码: 5itz
+
 不建议下载来玩……因为算是入门的demo，值得深究的地方不是很多。
 ## 内容
 包含了UMG，敌人设置，相对简单的敌人系统的跟踪设置，背包系统和农作系统。农作系统功能未能实现完全。只是能种不能收。
