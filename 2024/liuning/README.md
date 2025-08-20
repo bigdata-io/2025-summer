@@ -1,19 +1,74 @@
 # 基于虚幻引擎5的2.5D游戏demo
 
+全部的项目文件还是太大了💦💦
+
 通过网盘分享的文件：Windows (5).zip
 链接: https://pan.baidu.com/s/1HxyT2b8vt1RkzgXLyMwhXw?pwd=5itz 提取码: 5itz
 
-不建议下载来玩……因为算是入门的demo，值得深究的地方不是很多。
+未经引擎优化的版本，对CPU/GPU的占用情况不堪忍睹，基本上拉满💦。
+
+## 简介
+基于虚幻引擎5.2版本的游戏demo
 ## 内容
-包含了UMG，敌人设置，相对简单的敌人系统的跟踪设置，背包系统和农作系统。农作系统功能未能实现完全。只是能种不能收。
-## 现阶段无法解决的问题
-### 关于虚幻引擎狠狠压缩2D像素导致游戏打包出来糊糊的问题
-我以为关闭了Lumen会好一些，结果还是很糊。
-至少关掉了Lumen以后测试时是这样的：
-<img width="2270" height="1258" alt="image" src="https://github.com/user-attachments/assets/6ac01e70-5351-4bf4-b289-aae98fffa2cb" />
-### 关于打包出来的游戏无法像在编辑器里一样正常使用背包系统的问题
-我觉得还是像素导致的（？）因为在编辑器里测试很多遍，背包系统都是正常运行的：
-<img width="2283" height="1274" alt="image" src="https://github.com/user-attachments/assets/0d1985a3-4d77-4057-8cad-c2a699004c5a" />
-并且背包中的物品可以正常使用并回复生命值。
-## 其他
-因为最近和朋友在准备游开赛计划做一个文化传承类的剧情向RPG，那边美术和地编近些天已经完成了，所以这个demo姑且做到这里，还差一个天气系统和补全农作系统的虫害和天气影响功能。
+### 2.5D
+- 游戏角色为2D，其他物品，场景为3D.
+### 语言
+- UE5增强输入
+- 蓝图含量100%（作为初学者的过渡阶段）
+### UI
+- 主菜单（包含游戏指南/开始游戏/退出游戏）的悬停和音乐效果
+- 游戏指南（How to play)中未包含的按键或鼠标在游戏里均有文本提示
+- 用于玩家属性的 UI 元素（HUD）
+- 游戏过程中的交互提示词以及对话系统
+- 地图
+- 音量控制
+
+<div align="center">
+    <img src="https://github.com/Aisssky/2025-summer/blob/c71b7a281e21cb640f072850c9b4d4a6fffda105/2024/liuning/gifs/menu1.gif" alt="Widget" width="500">
+</div>
+
+<div align="center">
+    <img src="https://github.com/Aisssky/2025-summer/blob/c71b7a281e21cb640f072850c9b4d4a6fffda105/2024/liuning/gifs/Z6D.gif" alt="Widget" width="500">
+</div>
+### 背包系统
+<div align="center">
+    <img src="https://github.com/Aisssky/2025-summer/blob/c71b7a281e21cb640f072850c9b4d4a6fffda105/2024/liuning/gifs/Inventory1.gif" alt="Inventory System" width="500">
+</div>
+
+### 农作系统
+- 种植农作物以及农作物生长倒计时
+
+<div align="center">
+    <img src="https://github.com/Aisssky/2025-summer/blob/c71b7a281e21cb640f072850c9b4d4a6fffda105/2024/liuning/gifs/FarmA6.gif" alt="Farm System" width="500">
+</div>
+
+- 然而存在只能种不能收的bug（我称之为游戏机制
+### 对话系统
+- 可以派发任务的可回复的NPC对话(具有行为树的对话AI）
+- 可指引玩家行动的不可回复的NPC对话
+
+<div align="center">
+    <img src="https://github.com/Aisssky/2025-summer/blob/c71b7a281e21cb640f072850c9b4d4a6fffda105/2024/liuning/gifs/dialog34.gif" alt="Dialog System" width="500">
+</div>
+
+### 地图
+- 主地图
+- 家
+
+<div align="center">
+    <img src="https://github.com/Aisssky/2025-summer/blob/c71b7a281e21cb640f072850c9b4d4a6fffda105/2024/liuning/gifs/Home4D.gif" alt="Home Map" width="500">
+</div>
+
+- 夜里的村庄(未启用)
+
+<div align="center">
+     <img width="500" height="651" alt="79244fb88645aaf012b3a502d0bb855c" src="https://github.com/user-attachments/assets/919c690f-f6a9-46f7-8768-539cca30e44f" />
+</div>
+- 为了预测玩家行为的空气墙
+
+<div align="center">
+    <img src="https://github.com/Aisssky/2025-summer/blob/c71b7a281e21cb640f072850c9b4d4a6fffda105/2024/liuning/gifs/wall72.gif" alt="Home Map" width="500">
+</div>
+
+### 目前无法定位的问题
+- 背包系统在引擎内运行正常然而在打包出来的exe中无法正确运行的问题。
