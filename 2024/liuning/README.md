@@ -32,6 +32,7 @@
 <div align="center">
     <img src="https://github.com/Aisssky/2025-summer/blob/c71b7a281e21cb640f072850c9b4d4a6fffda105/2024/liuning/gifs/Z6D.gif" alt="Widget" width="500">
 </div>
+
 ### 背包系统
 <div align="center">
     <img src="https://github.com/Aisssky/2025-summer/blob/c71b7a281e21cb640f072850c9b4d4a6fffda105/2024/liuning/gifs/Inventory1.gif" alt="Inventory System" width="500">
