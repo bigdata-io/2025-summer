@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.mapper.CarMapper">
+
+    <update id="update">
+        update car
+    <set>
+        <if test="carname != null">
+            carname = #{carname},
+        </if>
+        <if test="price != null">
+            price = #{price},
+        </if>
+        <if test="speed != null">
+            speed = #{speed},
+        </if>
+    </set>
+        where brand = #{brand}
+        </update>
+
+    <delete id="delete">
+        delete from car where brand in
+        <foreach item="item" index="index" collection="list" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+    </delete>
+
+    <select id="page" resultType="com.itheima.vo.CarVo">
+        select * from car
+        <where>
+        <if test="brand != null">
+            and brand like concat('%',#{brand},'%')
+        </if>
+        </where>
+    </select>
+
+</mapper>
