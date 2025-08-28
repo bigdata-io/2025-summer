@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.mapper.RecordMapper">
+
+    <insert id="add">
+        insert into salerecord(saletime,username,brand,amount) values
+        <foreach collection="carVos" item="item" separator=",">
+            (#{saletime},#{username},#{item.brand},#{item.price})
+        </foreach>
+    </insert>
+
+</mapper>
