@@ -1,0 +1,212 @@
+.main .content-section {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  justify-content: space-between;
+}
+.main .content-section .match-center {
+  margin-top: 50px;
+}
+.main .content-section .left-content {
+  width: 872px;
+}
+
+.main .content-section .left-content .match-news {
+  display: flex;
+  margin-top: 15px;
+}
+
+.main .content-section .left-content .match-news .match_news_left {
+  display: block;
+  width: 211px;
+  height: 260px;
+}
+
+.main .content-section .left-content .match-news .match_news_left img {
+  width: 100%;
+}
+
+.main .content-section .left-content .match-news .match_news_right {
+  flex: 1;
+  width: 630px;
+  padding: 0 15px;
+}
+
+.main .content-section .left-content .match-news .match_news_right .match-title {
+  display: block;
+  width: 577px;
+  font-size: 24px;
+  color: #333;
+}
+
+.main .content-section .left-content .match-news .match_news_right .match-title:hover {
+  text-decoration: underline;
+}
+
+.main .content-section .left-content .match-news .match_news_right .match-sub-title {
+  line-height: 23px;
+  font-size: 14px;
+  color: #666666;
+}
+
+.main .content-section .left-content .match-news .match_news_right .match-list {
+  margin-top: 10px;
+}
+
+.main .content-section .left-content .match-news .match_news_right .match-list .match-list-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.main .content-section .left-content .match-news .match_news_right .match-list .match-list-left .desc {
+  display: block;
+  width: 470px;
+  color: #333;
+  font-size: 14px;
+}
+
+.main .content-section .left-content .match-news .match_news_right .match-list .match-list-left .desc:hover {
+  text-decoration: underline;
+}
+
+.main .content-section .right-content {
+  width: 295px;
+}
+
+.main .content-section .right-content .new-hero {
+  margin-top: 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+}
+
+.main .content-section .right-content .new-hero a {
+  display: block;
+}
+
+.main .content-section .right-content .new-hero a > img {
+  width: 100%;
+}
+
+.main .content-section .right-content .new-hero .info {
+  margin-top: 10px;
+  padding: 0 0 5px 10px;
+}
+
+.main .content-section .right-content .new-hero .info .desc {
+  font-size: 18px;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.main .content-section .right-content .new-hero .info .date {
+  font-size: 12px;
+  color: #999;
+}
+
+.main .content-section .right-content .hero-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.main .content-section .right-content .hero-list .item {
+  position: relative;
+  width: 68px;
+  height: 173px;
+}
+
+.main .content-section .right-content .hero-list .item a {
+  display: block;
+  width: 100%;
+}
+
+.main .content-section .right-content .hero-list .item .cover {
+  display: flex;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  writing-mode: vertical-lr;
+  color: #f3c258;
+  background: rgba(0,0,0,1);
+  transition: opacity .4s ease-in;
+}
+
+.main .content-section .right-content .hero-list .item:hover .cover {
+  opacity: 1;
+}
+
+.main .content-section .right-content .hero-list .item a img {
+  width: 100%;
+}
+
+.main .content-section .right-content .games-match {
+  margin-top: 86px;
+}
+
+.main .content-section .right-content .games-match .header_right .buy {
+  width: 70px;
+  height: 22px;
+  line-height: 20px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  border: 1px solid #f3c258;
+  border-radius: 3px;
+  font-size: 14px;
+  text-align: center;
+  text-indent: 25px;
+  background: url(../imgs/download.png) no-repeat -243px -85px;
+}
+
+.main .content-section .right-content .games-table {
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.main .content-section .right-content .games-table thead tr {
+  background-color: #f5f5f5;
+  height: 29px;
+  line-height: 29px;
+  font-size: 14px;
+  color: #999;
+}
+
+.main .content-section .right-content .games-table tbody tr {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.main .content-section .right-content .games-table tbody td {
+  padding: 10px 0;
+}
+
+.main .content-section .right-content .games-table tbody .team-logo {
+  margin-bottom: 5px;
+}
+
+.main .content-section .right-content .games-table tbody .vs {
+  font-size: 14px;
+  color: #f3c258;
+}
+
+.main .content-section .right-content .games-table tbody img {
+  width: 25px;
+  height: 25px;
+}
+
+.main .content-section .right-content a {
+  display: block;
+}
+
+.main .content-section .right-content a img {
+  width: 100%;
+}

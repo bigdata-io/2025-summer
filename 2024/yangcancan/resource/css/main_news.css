@@ -1,0 +1,167 @@
+.main .main_wrapper .news-section {
+  display: flex;
+  height: 342px;
+  background: url(../imgs/header-bg.png) no-repeat;
+}
+
+.main .main_wrapper .news-section .banner {
+  width: 604px;
+}
+
+.main .main_wrapper .news-section .banner .img-list {
+  display: flex;
+  overflow: hidden;
+  width: 604px;
+}
+
+.main .main_wrapper .news-section .banner .img-list .item {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.main .main_wrapper .news-section .banner .img-list .item > a {
+  display: block;
+}
+
+.main  .main_wrapper .news-section .banner .img-list .item > a > img {
+  width: 100%;
+}
+
+.main .main_wrapper .news-section .banner .title-list {
+  display: flex;
+  height: 44px;
+  line-height: 44px;
+}
+
+.main .main_wrapper .news-section .banner .title-list .item {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.main .main_wrapper .news-section .banner .title-list .item a {
+  display: block;
+  color: #b1b2be;
+}
+
+.main .main_wrapper .news-section .banner .title-list .item a:hover {
+background: rgba(255, 255, 255, 0.15);
+color: #f3c258;
+}
+
+
+.main  .news-section .news {
+  flex: 1;
+  overflow: hidden;
+  padding: 0 17px;
+}
+
+.main  .news-section .news .news-list {
+  display: flex;
+  height: 48px;
+  border-bottom: 1px solid #000;
+}
+
+.main  .news-section .news .news-list .item {
+  width: 52px;
+}
+
+.main  .news-section .news .news-list .item a {
+  display: block;
+  height: 48px;
+  line-height: 45px;
+  box-sizing: border-box;
+  color: #b8b9c5;
+  text-align: center;
+  transition: border-bottom 150ms ease-in;
+}
+
+.main .news-section .news .news-list .item:not(.more) a:hover {
+  color: #f3c258;
+  border-bottom: 3px solid #f3c258;
+}
+
+.main  .news-section .news .notice {
+  height: 36px;
+  line-height: 36px;
+  padding: 0 15px;
+  margin-top: 8px;
+  background-color: #414046;
+}
+
+.main  .news-section .news .notice > a {
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  color: #f3c258;
+}
+
+.main .news-section .news .notice-list {
+  margin-top: 20px;
+}
+
+.main  .news-section .news .notice-list .item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 11px;
+}
+
+.main .news-section .news .notice-list .item > .desc {
+  flex: 1;
+  color: #b8b9c5;
+  font-size: 14px;
+}
+
+.main .news-section .news .notice-list .item > .date {
+  padding: 0 8px;
+  font-size: 14px;
+  color: #999;
+}
+
+.main .news-section .download {
+  position: relative;
+  width: 236px;
+}
+
+.main .news-section .download a {
+  display: block;
+  background: url(../imgs/download.png) no-repeat;
+}
+
+.main .news-section .download a.download-btn {
+  height: 128px;
+  background-position: 0 -219px;
+}
+
+.main .news-section .download a.guard-btn {
+  height: 106px;
+  background-position: 0 -350px;
+}
+
+.main .news-section .download a.experience-btn {
+  height: 106px;
+  background-position: 0 -461px;
+}
+
+.main .news-section .warning {
+  position: absolute;
+  top: 0;
+  right: -58px;
+  width: 53px;
+}
+
+.main .news-section .warning > a {
+  display: block;
+  width: 100%;
+}
+
+.main .news-section .warning > .warning-top {
+  height: 68px;
+  background: url(../imgs/shiling.webp) no-repeat;
+  margin-bottom: 12px; 
+}
+
+.main .news-section .warning > .warning-bottom {
+  height: 47px;
+  background: url(../imgs/fanchenmi.webp) no-repeat;
+  background-size: contain;
+}

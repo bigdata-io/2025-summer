@@ -1,0 +1,153 @@
+.header {
+  position: relative;
+  background-color: rgba(0, 0, 0, .8);
+}
+
+.header_wrapper {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.header .area {
+  display: flex;
+  justify-content: space-between;
+  height: 84px;
+}
+
+.header .header_wrapper .left-area {
+  display: flex;
+}
+
+.header .area .left-area .logo a {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: block;
+  width: 200px;
+  height: 54px;
+  text-indent: -9999px;
+  background: url(../imgs/logo.png) no-repeat center center;
+}
+
+.header .area .left-area .nav-list {
+  display: flex;
+  margin-left: 20px;
+}
+
+.header .area .left-area .nav-list .item {
+  width: 110px;
+}
+
+.header .area .left-area .nav-list .item:hover {
+  background: url(../imgs/header-sprite.png) no-repeat 0 0;
+}
+
+.header .area .left-area .nav-list .item:hover a {
+  color: #e4b653;
+}
+
+.header .area .left-area .nav-list .item:hover .desc {
+  color: #91763f;
+}
+
+.header .area .left-area .nav-list .item a {
+  display: block;
+  height: 100%;
+  font-size: 18px;
+  padding-top: 25px;
+  box-sizing: border-box;
+  color: #c9c9dd;
+  text-align: center;
+}
+
+.header .area .left-area .nav-list .item a .desc {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  color: #858792;
+}
+
+.header .area .right-area {
+  display: flex;
+  align-items: center;
+}
+
+.header .area .right-area .image a {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #d9ad50;
+  border-radius: 42px;
+  ;
+}
+
+.header .area .right-area .info {
+  margin-left: 10px;
+}
+
+.header .area .right-area .info a {
+  display: block;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.header .area .right-area .info p {
+  margin-top: 5px;
+  color: #858792;
+}
+
+.header .dropmenu {
+  display: none;
+  position: absolute;
+  top: 84px;
+  left: 0;
+  right: 0;
+  height: 285px;
+  background-color: rgba(0,0,0,.7)
+}
+
+.header:hover .dropmenu {
+  display: block;
+  animation: dropmenuheight .4s ease forwards;
+}
+
+@keyframes dropmenuheight {
+  from {
+    height: 0;
+  }
+  to {
+    height: 285px;
+  }
+}
+
+.header .dropmenu .dropmenu-inner {
+  margin: 0 auto;
+  width: 890px;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 15px 0 30px 20px;
+}
+
+.header .dropmenu .dropmenu-inner .inner-list {
+  display: flex;
+}
+.header .dropmenu .dropmenu-inner .inner-list .item {
+  width: 110px;
+  text-align: center;
+}
+.header .dropmenu .dropmenu-inner .inner-list a {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  white-space: nowrap;
+  color: #c9c9dd;
+}
+
+.header .dropmenu .dropmenu-inner .inner-list a:hover {
+  color: #e4b653;
+  text-decoration: underline;
+}

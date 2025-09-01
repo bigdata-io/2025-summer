@@ -1,0 +1,22 @@
+.main .main-entrance {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 50px 0;
+}
+
+.main .main-entrance .item a {
+  display: block;
+  width: 291px;
+  height: 134px;
+  overflow: hidden;
+}
+
+.main .main-entrance .item a img {
+  width: 100%;
+  height: 100%;
+  transition: transform 400ms ease;
+}
+
+.main .main-entrance .item a:hover img {
+  transform: scale(1.1);
+}

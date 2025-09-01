@@ -1,0 +1,138 @@
+.main .right-nav {
+  position: fixed;
+  top: 50%;
+  transform: translate(0,-50%);
+  right: 0;
+  width: 254px;
+  height: 494px;
+  background: url(../imgs/right-bg.png) no-repeat;
+}
+
+.main .right-nav .right-nav-top-desc {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.main .right-nav .right-nav-bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 117px;
+}
+
+.main .right-nav .right-nav-bottom .item {
+  position: relative;
+  width: 100%;
+}
+
+/* 默认不显示左侧的图片 */
+.main .right-nav .right-nav-bottom .item .hide {
+  display: none;
+}
+
+.main .right-nav .right-nav-bottom .item.item-code {
+  width: 100%;
+  box-sizing: border-box;
+  height: 134px;
+  text-align: center;
+  padding-top: 3px;
+  background: url(../imgs/right-nav-bg.png) no-repeat -243px 0;
+}
+
+.main .right-nav .right-nav-bottom .item.item-code > img {
+  width: 107px;
+  height: 107px;
+}
+
+.main .right-nav .right-nav-bottom .item.item-king {
+  height: 38px;
+  margin-top: 1px;
+  background: url(../imgs/right-nav-bg.png) no-repeat -243px -134px;
+}
+
+.main .right-nav .right-nav-bottom .item.item-weibo > a {
+  display: block;
+  height: 38px;
+  margin-top: 1px;
+  background: url(../imgs/right-nav-bg.png) no-repeat  -122px -120px;
+}
+
+.main .right-nav .right-nav-bottom .item.item-weichat {
+  height: 38px;
+  background: url(../imgs/right-nav-bg.png) no-repeat  -122px -160px;
+}
+
+.main .right-nav .right-nav-bottom .item.item-video {
+  height: 38px;
+  background: url(../imgs/right-nav-bg.png) no-repeat  -122px 0;
+}
+
+.main .right-nav .right-nav-bottom .item-exp > a {
+  display: block;
+  line-height: 38px;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0,0,0,.6);
+}
+
+.main .right-nav .right-nav-bottom .item.item-king:hover {
+  background: url(../imgs/right-nav-bg.png) no-repeat -243px -172px;
+}
+
+.main .right-nav .sel:hover .hide {
+  position: absolute;
+  top: -68px;
+  left: -116px;
+  width: 115px;
+  height: 151px;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  padding-top: 7px;
+  background: url(../imgs/right-nav-bg.png) no-repeat  0 -416px
+}
+
+/* 加上出来的时候慢慢出来的动画 */
+.main .right-nav .right-nav-bottom .sel:hover .hide {
+  display: block;
+  animation: hideCoverAnim 1s ease-in-out forwards;
+}
+
+@keyframes hideCoverAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.main .right-nav .right-nav-bottom .sel:hover .hide span {
+  color: #f3c258;
+}
+
+.main .right-nav .right-nav-bottom .sel:hover .hide > img {
+  width: 101px;
+  height: 100px;
+  margin-bottom: 5px;
+}
+
+.main .right-nav .right-nav-bottom .item.item-weibo > a:hover {
+  background: url(../imgs/right-nav-bg.png) no-repeat  -122px -240px;
+}
+
+.main .right-nav .right-nav-bottom .item.item-weichat:hover {
+  background: url(../imgs/right-nav-bg.png) no-repeat  -122px -200px;
+}
+
+.main .right-nav .right-nav-bottom .item.item-video:hover {
+  background: url(../imgs/right-nav-bg.png) no-repeat  -122px -42px;
+}
+
+.main .right-nav .right-nav-bottom .item-exp > a:hover {
+  background-color: rgba(0,0,0,1);
+}
