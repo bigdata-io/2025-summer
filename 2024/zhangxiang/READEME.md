@@ -10,7 +10,7 @@
 
 密码：admin123
 
-![admin](img\admin.png)
+![admin](img\admin.png)(./img/admin.png)
 
 进入系统后点击**查看车辆**可查看现有车辆
 
