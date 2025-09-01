@@ -1,0 +1,81 @@
+.top {
+  border: 1px solid #f5f5f5;
+}
+
+.top .area {
+  display: flex;
+  justify-content: space-between;
+  height: 41px;
+  line-height: 41px;
+}
+
+.top .area .left-area .logo a {
+  display: block;
+  width: 150px;
+  text-indent: -9999px;
+  background: url(../imgs/top-logo.png) no-repeat center/contain;
+}
+
+.top .area .right-area {
+  display: flex;
+}
+
+.top .area .right-area .item a {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  color: #464646;
+}
+
+.top .area .right-area a.growth {
+  margin-right: 20px;
+}
+.top .area .right-area .item.ranking {
+  position: relative;
+}
+.top .area .right-area .item > .dropdown {
+  position: absolute;
+  right: -25px;
+  display: none;
+  z-index: 99;
+}
+
+.top .area .right-area .ranking .dropdown iframe {
+  position: absolute;
+  right: 0;
+  width: 1020px;
+  height: 658px;
+}
+
+.top .area .right-area .ranking:hover .dropdown {
+  display: block;
+}
+
+.top_wrapper {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.top_growth::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  bottom: 0;
+  margin: auto -25px;
+  background: url(../imgs/top-sprite.webp) no-repeat -30px 0;
+}
+
+.top_rank::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  opacity: 0.2;
+  transform: rotate(90deg);
+  background: url(../imgs/top-sprite.webp) no-repeat 0 0;
+}
