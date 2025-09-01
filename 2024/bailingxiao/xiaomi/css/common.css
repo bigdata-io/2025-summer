@@ -1,0 +1,162 @@
+/* 公共样式 */
+.wrapper {
+    /* 居中 */
+    margin: 0 auto;
+    width: 1200px;
+}
+/* 快捷导航 */
+.shortcut {
+    height: 52px;
+    background-color: #333;
+}
+.shortcut .wrapper {
+    display: flex;
+    justify-content: flex-start;
+    height: 52px;
+}
+
+.shortcut ul {
+    display: flex;
+    line-height: 52px;
+}
+.shortcut li a {
+    padding: 0 15px;
+    border-right: 1px solid #999;
+    font-size: 14px;
+    color: #fff;
+}
+.shortcut li:last-child a {
+    border-right: 0;
+}
+/* 头部 */
+.header {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 22px;
+    height: 55px;
+}
+.logo1 {
+    margin-right: 10px;
+    width: 55px;
+    height: 55px;
+    margin-left: 18px;
+}
+.logo1 a {
+    /*块级元素 */
+    display: block;
+    width: 55px;
+    height: 55px;
+    background-image: url(../images/logo.png);
+}
+.logo2 {
+    margin-right: 10px;
+    width: 163px;
+    height: 55px;
+}
+.logo2 a {
+    /*块级元素 */
+    display: block;
+    width: 163px;
+    height: 66px;
+    background-image: url(../images/new.gif);
+}
+.nav {
+    margin-bottom: 28px;
+}
+.nav ul {
+    display: flex;
+    line-height: 66px;
+}
+.nav li {
+    margin-right: 20px;
+}
+.nav li a {
+    padding-bottom: 8px;
+}
+
+/* 底部 */
+.footer {
+    height: 582px;
+}
+
+.help {
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    justify-content: space-between;
+}
+.help .left {
+    display: flex;
+}
+.help dl {
+    margin-right: 84px;
+}
+.help dt {
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 30px;
+}
+.help dd {
+    margin-bottom: 11px;
+}
+.help dd a {
+    font-size: 16px;
+    color: #969696;
+}
+.help .right {
+    width: 250px;
+    border-left: 1px solid #e8e8e8;
+    padding-left: 40px;
+    text-align: center;
+}
+.help .right h3 {
+    font-size: 30px;
+    color: #ff6709;
+}
+.help .right p {
+    font-size: 16px;
+    color: #666666;
+    line-height: 26px;
+}
+/* 版权 */
+
+.copyright {
+    text-align: center;
+    background-color: #f5f5f5;
+    width: 1400px;
+    height: 200px;
+    margin-top: 10px;
+    margin-left: -100px;
+}
+
+.copyright .logo {
+    width: 56px;
+    height: 56px;
+}
+.copyright .top {
+    display: flex;
+    padding-top: 30px;
+}
+.text-container {
+    font-size: 12px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+.text-container p {
+    margin: 0;
+    color: #a1a1a1;
+}
+
+.copyright p:nth-child(1) {
+    color: #000000;
+}
+.copyright .bottom {
+    display: flex;
+    width: 267px;
+    height: 19px;
+    margin-top: 40px;
+    margin-left: 40%;
+}
