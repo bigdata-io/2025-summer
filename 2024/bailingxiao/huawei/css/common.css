@@ -1,0 +1,87 @@
+/* 公共样式 */
+.outer{
+    width: 1280px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.wrapper {
+    /* 居中 */
+    margin: 0 auto;
+    width: 1200px;
+}
+/* 快捷导航 */
+.shortcut {
+    height: 30px;
+    border-bottom: 1px solid #9a9090;
+    background-color: #fafafa;
+}
+.shortcut .wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+    margin-top: 5px;
+}
+.shortcut ul {
+    display: flex;
+}
+.shortcut li a {
+    padding: 0 15px;
+    border-right: 1px solid #999;
+    color: #6c6c6c;
+    font-size: 10px;
+}
+.shortcut li:last-child a {
+    border-right: 0;
+}
+.shortcut .right li:first-child a {
+    border-right: 0;
+    font-weight: 700;
+}
+.shortcut .right li:nth-child(2) a {
+    font-weight: 700;
+}
+/* 华为专区 */
+.header {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 22px;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+   display: flex;
+    margin-right: 10px;
+    /* width: 55px;
+    height: 55px; */
+    margin-left: 18px;
+    align-items: center;
+}
+.logo p{
+  width: 75px;
+  height: 25px;
+  border: 1px solid #6c6c6c;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 20px;
+  color: #6c6c6c;
+  font-size: 13px;
+}
+.logo a {
+    /*块级元素 */
+    display: block;
+    width: 160px;
+    height: 40px;
+    background-image: url(../images/logo.huawei.png);
+    margin-right: 20px;
+}
+.scan a{
+  display: block;
+    width: 76px;
+    height: 76px;
+    background-image: url(../images/qrcode_vmall_app01.png);
+    margin-right: 20px;
+}
+.scan p{
+ font-size: 10px;
+}
