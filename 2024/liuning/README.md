@@ -1,11 +1,6 @@
 # 基于虚幻引擎5的2.5D游戏demo
 
-我好像理解错了 本来应该是应该要做java大作业来着（？）事已至此先用这个交差了（
-
-全部的项目文件还是太大了💦💦
-
-通过网盘分享的文件：Windows (5).zip
-链接: https://pan.baidu.com/s/1HxyT2b8vt1RkzgXLyMwhXw?pwd=5itz 提取码: 5itz
+https://github.com/Aisssky/UE5_StarDewValleyLike
 
 未经引擎优化的版本，对CPU/GPU的占用情况不堪忍睹，基本上拉满💦。
 
